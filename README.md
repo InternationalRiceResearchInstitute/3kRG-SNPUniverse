@@ -3,7 +3,7 @@
 Author: Roven Rommel Fuentes
 
 This utility merges variant calls from multiple VCF files. It applies the threshold QUAL>=30
-and assumes that GATK UnifiedGenotypr was ran with -emit-all-sites parameter to detect both SNPs and Indels.
+and assumes that GATK UnifiedGenotypr is ran with -emit-all-sites parameter to detect both SNPs and Indels.
 In retrieving variants, it considers issues caused by running GATK UG with SNPs and Indels together. 
 For parallelization, this code runs with a set of samples assigned to specific thread.
 There is also a feature to perform reduction when detecting variant calls from multiple references; it follows
